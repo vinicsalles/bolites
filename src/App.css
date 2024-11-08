@@ -1,0 +1,144 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.h1Logo {
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 3rem;
+  color: #fbcb30;
+  font-weight: 700;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  background-color: #8253b6;
+  padding: 0.6em 1.2em;
+  border-radius: 0.5rem;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav ul li a:hover {
+  color: #8253b6;
+  background-color: #fbcb30;
+}
+
+.butonDark {
+  margin: 0px;
+  background-color: #f1f1f1;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.butonDark:hover {
+  color: #f1f1f1;
+  background-color: black;
+  border: none;
+  transition: 1000ms;
+}
+
+nav h1 {
+  color: #8253b6;
+}
+
+.img-logo {
+  border-radius: 2rem;
+  border: 5px solid #8253b6;
+}
+
+.section-desc-logo {
+  padding: 3rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.button-sec {
+  display: flex;
+  gap: 2rem;
+}
+
+.button-sec button {
+  color: #8253b6;
+  border: none;
+  background-color: #fbcb30;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button-sec button:hover {
+  background-color: #8253b6;
+  color: #fbcb30;
+  border: none;
+  transition: 1000ms;
+}
+
+.desk {
+  width: 600px;
+}
+
+.desk h2 {
+  font-size: 3.5rem;
+  width: 550px;
+  margin: 0;
+  line-height: 1.2em;
+}
+
+.nutricional {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.nutriDiv {
+  padding: 3rem;
+  background-color: #8253b6;
+  border-radius: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nutriDiv span {
+  font-size: 2rem;
+  color: #49b83c;
+}
+
+.nutriDiv p {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+}
+
+.ingredientes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.ingredientes-div {
+  display: flex;
+  gap: 4rem;
+}
