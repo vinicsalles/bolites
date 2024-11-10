@@ -1,7 +1,7 @@
 import "./App.css";
 import bolites2 from "./assets/img2.jpeg";
 import logobolites from "./assets/logobolites.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import img1 from "./assets/img1.jpeg";
 import img2 from "./assets/img2.jpeg";
 import video from "./assets/videoBolites.mp4";
@@ -9,9 +9,15 @@ import { CiInstagram } from "react-icons/ci";
 import logo from "./assets/logo.png";
 import rotulagem from "./assets/rotulagem.png";
 import rotulagem2 from "./assets/rotulagem2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
   const [dark, setDark] = useState("Dark");
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   const handleDark = () => {
     setDark(dark === "Dark" ? "Light" : "Dark");
@@ -21,7 +27,7 @@ const App = () => {
   return (
     <>
       <nav>
-        <h1 className="h1Logo">
+        <h1 className="h1Logo" data-aos="flip-right">
           <img src={logobolites} alt="" className="logobolites" />
           <p
             style={{
@@ -48,10 +54,10 @@ const App = () => {
             </a>
           </li>
           <li>
-            <a href="">Sobre</a>
+            <a href="#sobre">Sobre</a>
           </li>
           <li>
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
           <li>
             <button className="butonDark" onClick={handleDark}>
@@ -62,11 +68,11 @@ const App = () => {
       </nav>
 
       <section className="section-desc-logo">
-        <div>
+        <div data-aos="flip-up">
           <img src={bolites2} alt="" className="img-logo" />
         </div>
 
-        <div className="desk">
+        <div className="desk" id="sobre" data-aos="fade-left">
           <h2>Bolites, o novo e inovador produto</h2>
           <p>
             É um lanche saudável e sustentável com ingredientes simples e
@@ -88,15 +94,15 @@ const App = () => {
       </section>
 
       <section className="nutricional">
-        <div className="nutriDiv">
+        <div className="nutriDiv" data-aos="flip-left">
           <span>0%</span>
           <p>Lactose</p>
         </div>
-        <div className="nutriDiv">
+        <div className="nutriDiv" data-aos="flip-left">
           <span>0%</span>
           <p>Glúten</p>
         </div>
-        <div className="nutriDiv">
+        <div className="nutriDiv" data-aos="flip-left">
           <span>0%</span>
           <p>Conservantes</p>
         </div>
@@ -104,12 +110,12 @@ const App = () => {
 
       <section className="ingredientes">
         <div className="ingredientes-div">
-          <div>
+          <div data-aos="fade-down-right">
             <video controls>
               <source src={video} type="video/mp4" />
             </video>
           </div>
-          <div className="ingrerotu">
+          <div className="ingrerotu" data-aos="fade-up-left">
             <ul className="ingrelista">
               <h4 style={{ marginBottom: "1rem" }}>Ingredientes: </h4>
               <li>Batata Doce</li>
@@ -129,7 +135,7 @@ const App = () => {
               <li>Tomilho</li>
             </ul>
           </div>
-          <div className="rotulagem">
+          <div className="rotulagem" data-aos="fade-up-left">
             <img src={rotulagem} alt="" />
             <img src={rotulagem2} alt="" />
           </div>
@@ -139,13 +145,18 @@ const App = () => {
       <section className="sections-photos">
         <h4>Mais Algumas Fotos do Produto</h4>
         <div className="photos">
-          <img src={img1} alt="" />
-          <img src={logo} alt="" />
-          <img src={img2} alt="" />
+          <img src={img1} alt="" data-aos="zoom-in" />
+          <img src={logo} alt="" data-aos="zoom-in" />
+          <img src={img2} alt="" data-aos="zoom-in" />
         </div>
       </section>
 
-      <section className="contato">
+      <section
+        className="contato"
+        id="contato"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <h3>Entre em Contato</h3>
         <form className="contato-form">
           <input type="text" placeholder="Nome" />
@@ -156,7 +167,7 @@ const App = () => {
       </section>
 
       <section className="sections-nutris">
-        <div className="nutris">
+        <div className="nutris" data-aos="flip-right">
           <h2>Juliana</h2>
           <a
             href="https://www.instagram.com/julianaContii/"
@@ -166,7 +177,7 @@ const App = () => {
             <CiInstagram />
           </a>
         </div>
-        <div className="nutris">
+        <div className="nutris" data-aos="flip-right">
           <h2>Kethlen</h2>
           <a
             href="https://www.instagram.com/kethlen__lima/"
@@ -176,7 +187,7 @@ const App = () => {
             <CiInstagram />
           </a>
         </div>
-        <div className="nutris">
+        <div className="nutris" data-aos="flip-right">
           <h2>Débora</h2>
           <a
             href="https://www.instagram.com/debora_faraco/"
@@ -186,7 +197,7 @@ const App = () => {
             <CiInstagram />
           </a>
         </div>
-        <div className="nutris">
+        <div className="nutris" data-aos="flip-right">
           <h2>Bruna</h2>
           <a
             href="https://www.instagram.com/brunacarius/"
