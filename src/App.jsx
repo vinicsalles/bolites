@@ -105,31 +105,33 @@ const App = () => {
       <section className="ingredientes">
         <div className="ingredientes-div">
           <div>
-            <video height={600} controls>
+            <video controls>
               <source src={video} type="video/mp4" />
             </video>
           </div>
-          <div>
-            <h4>Ingredientes</h4>
-            <ul>
+          <div className="ingrerotu">
+            <ul className="ingrelista">
+              <h4 style={{ marginBottom: "1rem" }}>Ingredientes: </h4>
               <li>Batata Doce</li>
               <li>Peito de Frango</li>
               <li>Farinha de Arroz</li>
               <li>Ovo</li>
               <li>Sal</li>
               <li>Azeite</li>
+
               <li>Alho</li>
               <li>Orange Pepper</li>
               <li>Cúrcuma</li>
               <li>Cebola</li>
               <li>Cebolinha</li>
               <li>Salsa</li>
+
               <li>Tomilho</li>
             </ul>
-            <div className="rotulagem">
-              <img src={rotulagem} alt="" />
-              <img src={rotulagem2} alt="" />
-            </div>
+          </div>
+          <div className="rotulagem">
+            <img src={rotulagem} alt="" />
+            <img src={rotulagem2} alt="" />
           </div>
         </div>
       </section>

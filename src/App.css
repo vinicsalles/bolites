@@ -144,6 +144,7 @@ nav h1 {
 }
 
 .ingredientes {
+  margin-top: 13rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,7 +154,15 @@ nav h1 {
 
 .ingredientes-div {
   display: flex;
+  align-items: center;
   gap: 4rem;
+}
+
+.ingredientes-div video {
+  border: 5px solid #8253b6;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .sections-nutris {
@@ -260,6 +269,7 @@ footer p {
 .sections-photos {
   display: flex;
   flex-direction: column;
+  margin-top: 10rem;
   align-items: center;
   justify-content: center;
   color: #000;
@@ -285,12 +295,30 @@ footer p {
 
 .rotulagem {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
 .rotulagem img {
-  width: 15rem;
-  height: 15rem;
+  width: 12rem;
+  height: 12rem;
+}
+
+.ingrerotu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingrelista {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: center;
+  border-radius: 0.4rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .rotulagem img:hover {
@@ -347,6 +375,21 @@ footer p {
     gap: 1rem;
   }
 
+  .ingredientes-div video {
+    height: 170px;
+    width: 300px;
+  }
+
+  .ingrelista {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
   .rotulagem {
     flex-direction: column;
     align-items: center;
@@ -363,6 +406,15 @@ footer p {
     padding: 1rem;
     margin-top: 5rem;
     margin-bottom: 1rem;
+  }
+
+  .sections-photos {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .ingredientes {
+    margin-top: 5rem;
   }
   .nutris {
     padding: 0.6rem;
