@@ -2,6 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 3rem;
 }
 
 .h1Logo {
@@ -62,6 +63,13 @@ nav h1 {
 .img-logo {
   border-radius: 2rem;
   border: 5px solid #8253b6;
+  height: 34rem;
+  width: 25rem;
+}
+
+.logobolites {
+  height: 3rem;
+  width: 3rem;
 }
 
 .section-desc-logo {
@@ -99,6 +107,11 @@ nav h1 {
   width: 550px;
   margin: 0;
   line-height: 1.2em;
+}
+
+.desk p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .nutricional {
@@ -141,4 +154,231 @@ nav h1 {
 .ingredientes-div {
   display: flex;
   gap: 4rem;
+}
+
+.sections-nutris {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.nutris {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: #fbcb30;
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nutris h2 {
+  color: #000;
+}
+
+.nutri-insta {
+  text-decoration: none;
+  color: #000;
+  font-size: 3rem;
+}
+
+.nutri-insta:hover {
+  color: #8253b6;
+  transform: scale(1.1);
+}
+
+footer {
+  box-sizing: border-box;
+  color: black;
+  padding: 0.3rem;
+  margin: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #8253b6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+footer p {
+  margin: 0.6rem;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  color: #000;
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  width: 19rem;
+  gap: 1rem;
+}
+
+.contato form input {
+  background: none;
+  border-radius: 0.2rem;
+  border: none;
+  padding: 1rem;
+  color: #000;
+  border: 2px solid #8253b6;
+}
+
+.contato form button {
+  background-color: #8253b6;
+  border: none;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.photos {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sections-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  gap: 1rem;
+}
+
+.sections-photos h4 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.photos img {
+  border: 5px solid #fbcb30;
+}
+
+.photos img:hover {
+  transform: scale(1.1);
+}
+
+.contato-form {
+  height: 10rem;
+}
+
+.rotulagem {
+  display: flex;
+  gap: 1rem;
+}
+
+.rotulagem img {
+  width: 15rem;
+  height: 15rem;
+}
+
+.rotulagem img:hover {
+  transform: scale(1.1);
+}
+
+.photos img {
+  width: 350px;
+  height: 400px;
+}
+
+@media (max-width: 968px) {
+  nav {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+  .img-logo {
+    height: 20rem;
+    width: 15rem;
+  }
+
+  .desk h2 {
+    font-size: 2.5rem;
+    width: 450px;
+    margin: 0;
+    line-height: 1.2em;
+  }
+
+  .desk {
+    width: 300px;
+  }
+
+  .section-desc-logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nutricional {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .ingredientes-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .rotulagem {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .photos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .sections-nutris {
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+  .nutris {
+    padding: 0.6rem;
+    margin-top: 2rem;
+  }
+  .nutris h2 {
+    font-size: 1rem;
+  }
+
+  .nutri-insta {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav ul {
+    gap: 1rem;
+  }
 }
