@@ -162,7 +162,9 @@ const App = () => {
           <input type="text" placeholder="Nome" />
           <input type="email" placeholder="Email" />
           <input type="text" placeholder="Mensagem" />
-          <button>Enviar</button>
+          <button onClick={() => {
+                alert("Em breve");
+              }}>Enviar</button>
         </form>
       </section>
 
