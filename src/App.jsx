@@ -118,12 +118,12 @@ const App = () => {
           <div className="ingrerotu" data-aos="fade-up-left">
             <ul className="ingrelista">
               <h4 style={{ marginBottom: "1rem" }}>Ingredientes: </h4>
-              <li>Batata Doce</li>
+              <li>Batata Doce com casca</li>
               <li>Peito de Frango</li>
               <li>Farinha de Arroz</li>
               <li>Ovo</li>
               <li>Sal</li>
-              <li>Azeite</li>
+              <li>Azeite de oliva extra virgem</li>
 
               <li>Alho</li>
               <li>Orange Pepper</li>
